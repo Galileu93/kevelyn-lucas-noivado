@@ -6,6 +6,7 @@
 - `npm run build`: geração de produção concluída.
 - Catálogo: os 32 links originais foram acessados individualmente; 32 títulos e 32 fotografias recuperados dos metadados oficiais de compartilhamento. IDs conferidos e imagens salvas em WebP.
 - Navegador: inspeção visual em 375, 390, 430, 768, 1024, 1366 e 1440 pixels. Medições de largura também em 320 e 360 pixels, sem rolagem horizontal de página ou controles fora da tela.
+- Ajustado o tamanho do nome do casal em 320 pixels após verificar a largura real dos caracteres, além da largura dos elementos. Console da prévia ativa sem erros ou avisos na leitura final.
 - Janela de presentes: produto correspondente, aviso de cores, campos com labels, fechamento por Escape e bloqueio da finalização quando não há banco configurado.
 - RSVP: campos e seleção de ausência verificados. Envio indisponível enquanto o banco não está conectado, com mensagem explícita.
 - Contador: números mudam em tempo real; alvo `2026-10-30T19:00:00-03:00`.

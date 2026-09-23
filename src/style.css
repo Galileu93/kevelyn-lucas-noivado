@@ -791,7 +791,7 @@ footer svg {
     padding-inline: 15px;
   }
   .hero h1 {
-    font-size: 3.05rem;
+    font-size: clamp(2.5rem, 14.5vw, 3.05rem);
   }
   .polaroid figcaption {
     font-size: 1.05rem;
