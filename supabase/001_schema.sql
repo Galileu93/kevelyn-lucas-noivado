@@ -2,6 +2,7 @@ begin;
 create schema if not exists private;
 revoke all on schema private from public, anon, authenticated;
 create table private.admin_users(user_id uuid primary key references auth.users(id) on delete cascade);
+alter table private.admin_users enable row level security;
 create function public.is_admin() returns boolean language sql stable security definer set search_path='' as $$
  select exists(select 1 from private.admin_users where user_id=auth.uid());
 $$;
